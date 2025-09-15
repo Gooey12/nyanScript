@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 function evalnyaate(one, opr, two){
     if (opr === "+"){
         console.log(one + two);
@@ -45,7 +47,5 @@ function nyanScript(code){
     }
 }
 
-nyanScript(`
-nya Sum of 3 + 2 is  
-evalnyaate 3+2
-`);
+const code = fs.readFileSync("nyanSample.nyan", "utf-8");
+nyanScript(code);
