@@ -30,10 +30,11 @@ function nyanScript(code){
 
         // evalnyaate
         if (cmd === "evalnyaate"){
-            const one = Number(args[0]);
-            const opr = args[1];
-            const two = Number(args[2]);
-            evalnyaate(one, opr, two)
+            const equation = args.split(" ");
+            const one = Number(equation[0]);
+            const opr = equation[1];
+            const two = Number(equation[2]);
+            evalnyaate(one, opr, two);
         }
 
         // nya / nya!
