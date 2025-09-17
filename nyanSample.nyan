@@ -1,3 +1,3 @@
-nya! Hello, world!
-
-evalnyaate 71.3 * 95
+nyano int x = 21
+nyano int y = 37
+evalnyaate x + y
